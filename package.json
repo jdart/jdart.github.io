@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "tailwindcss -i ./styles.in.css -o ./styles.out.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.4",
+    "tailwindcss": "^4.1.4"
+  }
+}

@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+img.rounded {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+@layer base {
+    a {
+        @apply text-blue-500;
+    }
+    a:hover {
+        @apply hover:underline;
+    }
+}
+
+
+@media print {
+    .show-urls {
+        a[href]:after {
+            content: ": " attr(href);
+        }
+    }
+}
